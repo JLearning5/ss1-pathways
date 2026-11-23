@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en-NG">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore Science, Arts and Commercial subjects as you move from JSS3 to SS1 in Nigeria.">
+  <meta name="theme-color" content="#f7f8f3">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>SS1 Pathways · A guide for JSS3 students</title>
+  <link rel="icon" href="assets/icon.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="./" aria-label="SS1 Pathways home"><span class="brand-mark" aria-hidden="true">✦</span> SS1 Pathways</a>
+      <nav aria-label="Main">
+        <a href="#pathways">Pathways</a>
+        <a href="worksheet.html">Worksheet</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="shell hero" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <p class="eyebrow">A guide for Nigerian JSS3 students</p>
+        <h1 id="hero-title">Explore your <em>SS1</em><br class="desktop-break"> options.</h1>
+        <p class="intro">See what you could study in Science, Arts or Commercial. Then try six quick questions to see which subjects you’d like to explore further.</p>
+        <div class="actions">
+          <a class="button primary" href="#reflection">Start the reflection</a>
+          <a class="button secondary" href="#pathways">Compare pathways</a>
+        </div>
+        <p class="small-note">About 3 minutes <span aria-hidden="true">·</span> Free <span aria-hidden="true">·</span> No sign-up</p>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <span class="art-sparkle">✦</span>
+        <span class="art-sparkle small-sparkle">✦</span>
+        <div class="notebook">
+          <span class="notebook-label">MY NEXT CLASS</span>
+          <strong>SS1</strong>
+          <div class="notebook-lines"></div>
+        </div>
+        <span class="art-tab science-tab">Science</span>
+        <span class="art-tab arts-tab">Arts</span>
+        <span class="art-tab business-tab">Commercial</span>
+      </div>
+    </section>
+
+    <section class="pathway-section" id="pathways" aria-labelledby="pathways-title">
+      <div class="shell">
+        <p class="eyebrow">Compare pathways</p>
+        <h2 id="pathways-title">What could you study in SS1?</h2>
+        <p class="section-intro">These are examples from Nigeria’s revised curriculum. Ask your school which subjects and combinations it offers.</p>
+        <div class="pathway-grid">
+          <article class="pathway science" id="science">
+            <span class="path-icon" aria-hidden="true">✳</span>
+            <h3>Science</h3>
+            <p>Explore how living things, materials and machines work.</p>
+            <h4>Example subjects</h4>
+            <ul class="chips"><li>Biology</li><li>Chemistry</li><li>Physics</li><li>Further Mathematics</li></ul>
+            <details><summary>Try it and look ahead</summary><p>Try observing how two plants grow in different conditions and recording what changes. Related areas include health, engineering and agriculture.</p></details>
+          </article>
+          <article class="pathway arts" id="arts">
+            <span class="path-icon" aria-hidden="true">✎</span>
+            <h3>Arts <span>(Humanities)</span></h3>
+            <p>Explore stories, creativity, communities and how societies work.</p>
+            <h4>Example subjects</h4>
+            <ul class="chips"><li>Literature in English</li><li>Government</li><li>Visual Arts</li><li>Music</li></ul>
+            <details><summary>Try it and look ahead</summary><p>Interview someone about a local issue and turn what you learn into a short article, drawing or debate. Related areas include law, media and design.</p></details>
+          </article>
+          <article class="pathway business" id="business">
+            <span class="path-icon" aria-hidden="true">▤</span>
+            <h3>Commercial <span>(Business)</span></h3>
+            <p>Explore money, trade and how businesses meet people’s needs.</p>
+            <h4>Example subjects</h4>
+            <ul class="chips"><li>Accounting</li><li>Commerce</li><li>Economics</li><li>Marketing</li></ul>
+            <details><summary>Try it and look ahead</summary><p>Make a simple budget for a school event. Work out the cost of each item and where you could save money. Related areas include accounting, marketing and entrepreneurship.</p></details>
+          </article>
+        </div>
+        <aside class="trade-note" aria-labelledby="trade-title">
+          <div class="trade-mark" aria-hidden="true">+</div>
+          <div><h3 id="trade-title">Core and trade subjects</h3>
+          <p>Students also take core subjects such as English Language and General Mathematics. The revised curriculum lists one trade subject alongside the core subjects. Ask your school which practical subjects it offers, such as garment making, computer hardware and phone repairs, or crop production.</p></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="shell reflection-section" id="reflection" aria-labelledby="reflection-title">
+      <div class="reflection-intro">
+        <p class="eyebrow">Quick reflection</p>
+        <h2 id="reflection-title">What interests you?</h2>
+        <p>Choose what you’d most like to try. Your answers suggest pathways to read about and discuss with your teacher, counsellor or family.</p>
+        <p class="small-note">Your answers stay on this page and clear when you reload.</p>
+      </div>
+      <div class="reflection-card">
+        <div id="reflection-app" hidden>
+          <form id="questions" autocomplete="off">
+            <div class="progress-row"><label id="progress-label" for="progress">Question 1 of 6</label><progress id="progress" value="1" max="6" aria-labelledby="progress-label"></progress></div>
+            <fieldset>
+              <legend id="question" tabindex="-1"></legend>
+              <div id="choices"></div>
+            </fieldset>
+            <p id="answer-error" class="error" role="alert" hidden>Choose an answer, or select “I’m not sure”.</p>
+            <div class="actions quiz-actions">
+              <button type="button" class="button secondary" id="back" hidden>Back</button>
+              <button type="submit" class="button primary" id="forward">Next question</button>
+            </div>
+          </form>
+          <div id="results" hidden></div>
+        </div>
+        <noscript><p>The online reflection uses JavaScript. <a href="worksheet.html">Open the worksheet</a> to do the same activity on paper.</p></noscript>
+      </div>
+    </section>
+
+    <section class="shell paper-section" aria-labelledby="paper-title">
+      <div class="paper-card">
+        <div><h2 id="paper-title">Try it on paper</h2><p>Use the same questions with your class or at home. Print a copy or copy the questions into a notebook.</p></div>
+        <a class="button secondary" href="worksheet.html">Open the worksheet</a>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <p><strong>SS1 Pathways</strong><br>For students moving from JSS3 to SS1.</p>
+      <p>Subject examples based on the <a href="https://www.nerdc.gov.ng/content_manager/new_senior_curriculum_home.html">NERDC senior secondary curriculum</a> and its <a href="https://nerdc.gov.ng/content_manager/Press%20Release%20On%20New%20FG%20Curriculum.pdf">subject list (PDF)</a>.</p>
+    </div>
+  </footer>
+</body>
+</html>
